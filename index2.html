@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox align 0 — starting code</title>
+    <!-- <link rel="stylesheet" href="node_modules\normalize.css\normalize.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Helvetica;
+        }
+        
+        .flex-box {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(135deg, rgb(240, 95, 87) 10%, rgb(54, 9, 64) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        form {
+            width: 90%;
+            height: 70%;
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: hsla(0, 0%, 100%, 0.3);
+            z-index: 1;
+        }
+        
+        form p {
+            font-size: 60px;
+            font-weight: 800;
+        }
+        
+        form::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(135deg, rgb(240, 119, 112) 10%, rgb(54, 9, 64) 100%);
+            filter: blur(25px);
+            /* background-color: rgba(255, 0, 0, 0.3) */
+            z-index: -1;
+            margin: -20px;
+        }
+        
+        .navbar {
+            width: 95%;
+            height: 70px;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar>li {
+            width: 15%;
+            height: 65px;
+            border: 1px solid rgb(134, 130, 130);
+            border-radius: 15px;
+            box-shadow: 3px 5px 2px gray;
+            list-style: none;
+            text-align: center;
+            line-height: 65px;
+            background-color: darkseagreen;
+            color: whitesmoke;
+            transition-property: background-color, transform;
+            transition-duration: 300ms;
+        }
+        
+        .navbar>li:hover {
+            background-color: lightgreen;
+            transform: scale(1.3, 1.3);
+            cursor: pointer;
+        }
+        
+        .navbar {
+            font-size: 1.5vw;
+        }
+        
+        #logo-outbox {
+            border: 1px solid gray;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: rgb(124, 112, 112);
+        }
+        
+        #logo-box {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            background-image: linear-gradient(135deg, rgb(116, 218, 49) 10%, rgb(82, 6, 99) 100%);
+            border-radius: 2px;
+            animation-name: roll;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform-origin: bottom right;
+            box-shadow: 8px -20px 2px gray;
+        }
+        
+        #logo-left {
+            color: gray;
+        }
+        
+        #logo-right {
+            color: yellowgreen;
+        }
+        
+        @keyframes roll {
+            from {
+                transform: translateX(-100%);
+                animation-timing-function: ease-in-out;
+            }
+            20% {
+                transform: translateX(-100%) skewX(15deg);
+            }
+            28% {
+                transform: translateX(-100%) skewX(0deg);
+                animation-timing-function: ease-out;
+            }
+            45% {
+                transform: translateX(-100%) skewX(-5deg) rotate(20deg) scaleY(1.1);
+                animation-timing-function: ease-in-out;
+            }
+            50% {
+                transform: translateX(-100%) rotate(45deg) scaleY(1.1);
+                animation-timing-function: ease-in;
+            }
+            60% {
+                transform: translateX(-100%) rotate(90deg);
+            }
+            65% {
+                transform: translateX(-100%) rotate(90deg) skewX(10deg);
+            }
+            70% {
+                transform: translateX(-100%) rotate(90deg) skewY(0deg);
+            }
+            to {
+                transform: translateX(-100%) rotate(90deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-box">
+        <ul class="navbar">
+            <li>Home</li>
+            <li>Introduction</li>
+            <li>Works </li>
+            <li>Experrince</li>
+            <li>About</li>
+        </ul>
+        <form action="">
+            <div id="logo-outbox">
+                <p id="welcome-logo"><span id="logo-box"></span> <span id=logo-left>Welcome to</span> <span id="logo-right">the website of Liang</span></p>
+            </div>
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>

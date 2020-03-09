@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>毛玻璃效果模态框</title>
+    <style>
+        html {
+            font-family: Helvetica, sans-serif;
+            font-size: 60px;
+            font-weight: 500;
+        }
+        
+        #div1 {
+            width: 800px;
+            height: 500px;
+            background-color: hsla(0, 0%, 100%, 0.3);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-left: -400px;
+            margin-top: -250px;
+            border-radius: 15px;
+            overflow: hidden;
+            display: none;
+        }
+        
+        #div1 p:first-child {
+            text-align: center;
+            margin-top: 100px;
+        }
+        
+        #div1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(135deg, rgb(240, 95, 87) 10%, rgb(54, 9, 64) 100%);
+            filter: blur(30px);
+            /* background-color: rgba(255, 0, 0, 0.3) */
+            z-index: -1;
+            margin: -10px;
+            font-weight: 200;
+        }
+        
+        form {
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+        
+        body {
+            background-image: linear-gradient(135deg, rgb(240, 95, 87) 10%, rgb(54, 9, 64) 100%);
+        }
+        
+        #form-btn {
+            width: 300px;
+            height: 44px;
+            margin: auto;
+            text-align: center;
+            line-height: 44px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin-top: 150px;
+            margin-bottom: 8px;
+            border-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(169, 169, 169, 0.2);
+            font-size: 20px;
+        }
+        
+        #form-btn>a {
+            text-decoration: none;
+            font-size: 1em;
+            color: black;
+        }
+        
+        #logo {
+            width: 100px;
+            height: 70px;
+        }
+        
+        #logo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20%;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById("div1").style.display = "block";
+            }, 1000)
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="logo">
+        <img src="logo.jpg" alt="">
+    </div>
+    <div id="div1">
+        <form action="" method="get">
+
+            <p>Welcome to the website !</p>
+            <p id="form-btn"><a href="index2.html">进入主页</a></p>
+        </form>
+    </div>
+
+
+</html>
