@@ -22,7 +22,8 @@
         .flex-box {
             width: 100%;
             height: 100%;
-            background-image: url(bcg.jpg);
+            /* background-image: linear-gradient(135deg, rgb(240, 95, 87) 10%, rgb(54, 9, 64) 100%); */
+            background-image: url(images/2.jpg);
             background-size: cover;
             /* background-image: linear-gradient(270deg, rgb(40, 48, 72), rgb(133, 147, 152)); */
             display: flex;
@@ -41,6 +42,7 @@
             align-items: center;
             position: relative;
             background-color: hsla(0, 0%, 100%, 0.3);
+            overflow: hidden;
             z-index: 1;
         }
         
@@ -56,13 +58,14 @@
             right: 0;
             bottom: 0;
             left: 0;
-            background-image: url(bcg.jpg);
+            /* background-image: linear-gradient(135deg, rgb(240, 95, 87) 10%, rgb(54, 9, 64) 100%); */
+            background-image: url(images/2.jpg);
             background-size: cover;
             /* background-image: linear-gradient(270deg, rgb(40, 48, 72), rgb(133, 147, 152)); */
-            filter: blur(25px);
+            filter: blur(26px);
             /* background-color: rgba(255, 0, 0, 0.3) */
             z-index: -1;
-            margin: -20px;
+            margin: -35px;
         }
         
         .navbar {
@@ -77,8 +80,8 @@
         }
         
         .navbar>li {
-            width: 15%;
-            height: 65px;
+            width: 10%;
+            height: 55px;
             border: 1px solid rgb(134, 130, 130);
             border-radius: 15px;
             box-shadow: 3px 5px 2px gray;
@@ -98,7 +101,7 @@
         }
         
         .navbar {
-            font-size: 1.5vw;
+            font-size: 1vw;
         }
         
         .navbar a {
@@ -112,20 +115,20 @@
         }
         
         #logo-outbox {
-            border: 1px solid gray;
+            /* border: 1px solid gray; */
             padding: 20px;
             border-radius: 5px;
-            background-color: rgb(223, 219, 219, 0.3);
+            /* background-color: rgb(223, 219, 219, 0.3); */
         }
         
         #logo-box {
             display: inline-block;
             width: 1.5em;
             height: 1.5em;
-            background-image: url(fullstack.jpg);
-            background-size: contain;
-            /* background-image: linear-gradient(270deg, rgb(40, 48, 72), rgb(133, 147, 152)); */
-            border-radius: 2px;
+            border-radius: 5px;
+            /* background-image: url(fullstack.jpg);
+            background-size: contain; */
+            background-image: linear-gradient(135deg, rgb(253, 101, 133) 10%, rgb(13, 37, 185) 100%);
             animation-name: roll;
             animation-duration: 3s;
             animation-delay: 1s;
@@ -182,20 +185,36 @@
 <body>
     <div class="flex-box">
         <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About me</a> </li>
             <li><a href="skills.html">Skills</a></li>
-            <li><a href="about.html">Program</a> </li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Contact</a></li>
+
+            <li><a href="#">Contact</a></li> -->
         </ul>
         <form action="">
             <div id="logo-outbox">
                 <p id="welcome-logo"><span id="logo-box"></span> <span id=logo-left>Welcome to</span> <span id="logo-right">the website of Liang</span></p>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About me</a> </li>
+                    <li><a href="skills.html">Skills</a></li>
+
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
 
         </form>
 
     </div>
+    <script>
+        // window.onload = function() {
+        //     setTimeout(function() {
+        //         window.location.href = "about.html";
+        //     }, 4000)
+        // }
+    </script>
 </body>
 
 </html>
