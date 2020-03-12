@@ -36,6 +36,7 @@ body {
     width: 340px;
     position: fixed;
     box-shadow: 6px 8px 10px rgba(0, 0, 0, .5);
+    overflow: hidden;
 }
 
 .sidebar-box>a {
@@ -85,6 +86,7 @@ body {
 }
 
 .sidebar a:hover {
+    color: white;
     text-decoration: none;
     transform: scale(1.2, 1.2);
     transition-timing-function: ease-in-out;
@@ -95,6 +97,23 @@ body {
 .sidebar-box>.infoItem {
     width: 80px;
     height: 80px;
+}
+
+.sidebar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-image: linear-gradient(135deg, rgb(240, 95, 87) 10%, rgb(54, 9, 64) 100%); */
+    background-image: url(images/2.jpg);
+    background-size: cover;
+    /* background-image: linear-gradient(270deg, rgb(40, 48, 72), rgb(133, 147, 152)); */
+    filter: blur(26px);
+    /* background-color: rgba(255, 0, 0, 0.3) */
+    z-index: -1;
+    margin: -35px;
 }
 
 .info-container {
