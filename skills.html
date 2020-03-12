@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Skills</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         html {
             font-family: sans-serif;
@@ -39,7 +41,7 @@
         
         article:hover {
             background-color: rgb(229, 241, 114);
-            transform: scale(1.3, 1.3);
+            transform: scale(1.1, 1.1);
             cursor: pointer;
         }
         
@@ -48,6 +50,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             margin: 20px 50px 100px 50px;
+            position: relative;
         }
         
         article {
@@ -63,103 +66,118 @@
 
     <section>
         <article>
-            <h2>HTML5</h2>
+            <h2>HTML&&CSS</h2>
 
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">1.熟悉常用的HTML标签和HTML5新增标签</a>
+                <a href="#" class="list-group-item list-group-item-info">2.熟悉常用的选择器，基本的布局方式和简单的动画</a>
+                <a href="#" class="list-group-item list-group-item-warning">3.可以解决基本的CSS样式兼容性问题</a>
+                <a href="#" class="list-group-item list-group-item-danger">4.会使用CSS预处理器LESS和SASS</a>
+            </div>
+
         </article>
 
         <article>
-            <h2>CSS3</h2>
+            <h2>JavaScript</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">1.熟悉ES5基础语法和ES6常用语法</a>
+                <a href="#" class="list-group-item list-group-item-info">2.可以使用JS解决基本的交互问题</a>
+                <a href="#" class="list-group-item list-group-item-warning">3.可以解决基本的JS交互兼容性问题</a>
+                <a href="#" class="list-group-item list-group-item-danger">4.可以处理基础的JS方面的性能问题</a>
+                <a href="#" class="list-group-item list-group-item-danger">5.熟悉jQuery和bootstrap框架</a>
+            </div>
 
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
-        </article>
-        <article>
-            <h2>Javascript && ES6</h2>
-
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
         </article>
         <article>
             <h2>Ajax</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">1.理解Ajax的基本原理</a>
+                <a href="#" class="list-group-item list-group-item-info">2.可以使用Ajax进行前后端数据交互</a>
+                <a href="#" class="list-group-item list-group-item-warning">3.可以处理基本的跨域问题</a>
+                <a href="#" class="list-group-item list-group-item-danger">4.根据接口文档可以调用接口数据，处理接口数据</a>
+                <a href="#" class="list-group-item list-group-item-danger">5.熟悉jquery ajax了解fetch和axios</a>
+            </div>
 
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
-
-            <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird
-                on it. Listicle pickled man bun cornhole heirloom art party.</p>
-        </article>
-
-        <article>
-            <h2>JQuery</h2>
-
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
-        </article>
-
-        <article>
-            <h2>Bootstrap</h2>
-
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
         </article>
         <article>
-            <h2>Less && Sass</h2>
+            <h2>Git</h2>
 
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">熟悉git基本操作，可以使用其进行代码版本管理</a>
+
+            </div>
+
+        </article>
+
+
+        <article>
+            <h2>Node.js&npm</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">1.熟悉npm的基本操作，可以完成基本的包管理任务</a>
+                <a href="#" class="list-group-item list-group-item-info">2.了解node.js,可以搭建简单的服务器环境，处理简单前端网络请求任务</a>
+                <a href="#" class="list-group-item list-group-item-warning">3.熟悉基本的异步编程方法</a>
+                <a href="#" class="list-group-item list-group-item-warning">3.了解服务端渲染</a>
+
+            </div>
+
         </article>
         <article>
-            <h2>Git && Github</h2>
+            <h2>HTTP&浏览器工作原理</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">1.了解浏览器工作原理和HTTP请求流程</a>
+                <a href="#" class="list-group-item list-group-item-info">2.熟悉HTTP请求报文和响应报文</a>
+                <a href="#" class="list-group-item list-group-item-warning">3.了解浏览器缓存</a>
 
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+            </div>
 
-            <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird
-                on it. Listicle pickled man bun cornhole heirloom art party.</p>
         </article>
 
         <article>
             <h2>Vue.js</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">1.熟悉vue常用语法</a>
+                <a href="#" class="list-group-item list-group-item-info">2.会使用基于webpack的vue CLI搭建单文件组件项目</a>
+                <a href="#" class="list-group-item list-group-item-warning">3.会使用基于vue的ElementUI组件库</a>
 
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+            </div>
+
         </article>
 
         <article>
             <h2>微信小程序</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">1.学习过微信小程序开发，了解基础语法</a>
+                <a href="#" class="list-group-item list-group-item-info">2.可以使用微信小程序原生语法开发简单的小项目，和云开发</a>
+                <a href="#" class="list-group-item list-group-item-warning">3.了解uni-app框架</a>
 
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
-        </article>
+            </div>
 
-        <article>
-            <h2>Node.js</h2>
-
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
-
-            <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird
-                on it. Listicle pickled man bun cornhole heirloom art party.</p>
         </article>
 
 
-        <article>
-            <h2>Eleventh article</h2>
 
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+        <article>
+            <h2>浏览器兼容性和网站应用用性能</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">1.了解基本的浏览器兼容性问题处理方法</a>
+                <a href="#" class="list-group-item list-group-item-info">2.了解基本的网页性能优化方法</a>
+
+
+            </div>
+
         </article>
 
         <article>
-            <h2>Twelfth article</h2>
+            <h2>其它</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">1.熟悉正则表达式</a>
+                <a href="#" class="list-group-item list-group-item-info">2.学习过PHP,能看懂代码</a>
+                <a href="#" class="list-group-item list-group-item-warning">3.了解一些数据结构和算法相关知识</a>
+                <a href="#" class="list-group-item list-group-item-warning">3.熟悉基本的Linux命令和shell工具</a>
 
-            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
-                PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+            </div>
 
-            <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird
-                on it. Listicle pickled man bun cornhole heirloom art party.</p>
         </article>
     </section>
 </body>
