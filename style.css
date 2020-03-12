@@ -143,6 +143,10 @@ body {
     flex: 100px;
 }
 
+div.caption {
+    text-align: center;
+}
+
 li {
     list-style: none;
 }
