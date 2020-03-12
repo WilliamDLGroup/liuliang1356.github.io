@@ -4,6 +4,26 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+}
+
+.name {
+    display: inline-block;
+    margin: 10px 20px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 45px;
+    color: white;
+    background: hsla(59, 95%, 30%, 0.932);
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black;
+}
+
+.self-intro {
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    background: hsl(0, 50%, 45%);
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black;
 }
 
 .container-fluid {
