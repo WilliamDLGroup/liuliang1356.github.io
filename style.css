@@ -48,9 +48,10 @@ body {
     border-radius: 50%;
 }
 
-.resume-section {
+
+/* .resume-section {
     min-height: 500px;
-}
+} */
 
 .nav-item {
     margin: 10px;
@@ -79,6 +80,7 @@ body {
 .info-container {
     background-color: rgb(165, 161, 161);
     min-height: 200px;
+    border-radius: 5px;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -136,4 +138,34 @@ body {
     align-items: center;
     flex-wrap: wrap;
     flex: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+.contact li {
+    display: inline-block;
+    margin: 40px;
+}
+
+.contact li:hover {
+    transform: scale(1.1, 1.1);
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+#contact {
+    height: 100px;
+}
+
+.contact {
+    background-color: rgb(173, 170, 170);
+    border-radius: 1em;
+}
+
+.self-introduction {
+    font-size: 1.2em;
+    font-weight: 350;
 }
